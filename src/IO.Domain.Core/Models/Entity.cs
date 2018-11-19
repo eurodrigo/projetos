@@ -21,7 +21,6 @@ namespace IO.Domain.Core.Models
             var compareTo = obj as Entity<T>;
 
             if (ReferenceEquals(this, compareTo)) return true;
-
             if (ReferenceEquals(null, compareTo)) return false;
 
             return Id.Equals(compareTo.Id);
