@@ -19,7 +19,6 @@ namespace IO.Domain.Core.Models
         public override bool Equals(object obj)
         {
             var compareTo = obj as Entity<T>;
-
             if (ReferenceEquals(this, compareTo)) return true;
             if (ReferenceEquals(null, compareTo)) return false;
 
