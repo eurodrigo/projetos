@@ -30,7 +30,6 @@ namespace IO.Domain.Core.Models
         public static bool operator ==(Entity<T> a, Entity<T> b)
         {
             if (ReferenceEquals(a, null) && ReferenceEquals(b, null)) return true;
-
             if (ReferenceEquals(a, null) || ReferenceEquals(b, null)) return false;
 
             return a.Equals(b);
